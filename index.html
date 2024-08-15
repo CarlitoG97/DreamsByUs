@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream by Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dream by Us</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Search for your dreams">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Dreams posted by me</a></li>
+            <li><a href="#">Dreams posted around the world</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cogwheel menu on the right side -->
+    <div class="settings-menu">
+        <span class="settings-icon">⚙️</span>
+        <div class="dropdown-content">
+            <a href="signin.html">Login</a>
+            <a href="signup.html">Sign up</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Dream by Us &copy; 2024</p>
+    </footer>
+
+    <script>
+        // For dropdown menu interactivity
+        document.querySelector('.settings-icon').addEventListener('click', function() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
